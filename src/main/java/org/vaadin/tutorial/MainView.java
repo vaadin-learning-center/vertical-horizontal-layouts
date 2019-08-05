@@ -57,7 +57,11 @@ public class MainView extends VerticalLayout {
 		drawer.getElement().addEventListener("click", ev->sideMenu.getStyle().set("left", "0px"));
 		Icon avatar = VaadinIcon.USER.create();
 		avatar.setSize("4em");
-		sideMenu.add(avatar, new Span("John Doe"),createMenuOption("User profile"), createMenuOption("Configuration"), createMenuOption("About"));
+		sideMenu.add(avatar,
+								 new Span("John Doe"),
+								 createMenuOption("User profile"),
+								 createMenuOption("Configuration"),
+								 createMenuOption("About"));
 		sideMenu.setAlignItems(Alignment.CENTER);
 
 		// CONTAINER
